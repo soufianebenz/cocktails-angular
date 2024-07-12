@@ -3,6 +3,6 @@ import { ListCocktailsComponent } from '../list-cocktails/list-cocktails.compone
 import { DetailCocktailComponent } from '../detail-cocktail/detail-cocktail.component';
 
 export const routes: Routes = [
-    { path: '', component: ListCocktailsComponent },
-    { path: 'list-cocktails/:id', component: DetailCocktailComponent }
+    { path: 'cocktails', component: ListCocktailsComponent },
+    { path: 'cocktails/:id', component: DetailCocktailComponent }
 ];
