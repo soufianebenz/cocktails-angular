@@ -1,0 +1,20 @@
+.card {
+    flex-direction: row;
+  }
+  .card img {
+    width: 30%;
+  }
+.green{
+    background-color: rgb(83, 151, 111);
+    width: 70%;
+}
+
+.blue{
+    background-color: rgb(83, 105, 151);
+    width: 50%;
+}
+
+.cocktail-card{
+  border-radius: 10px;
+  border: solid  2px #d8dee9;
+}

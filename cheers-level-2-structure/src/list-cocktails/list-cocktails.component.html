@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="row">
+        <form style="width: 100%;">
+            <h4>Filters</h4>
+            <div class="form-group row">
+              <label for="cocktailName" class="col-4 col-form-label">Cocktail name</label>
+              <div class="col-8">
+                <input type="text" name="cocktailName"  class="form-control" id="cocktailName" [value]="cocktailName" (input)="cocktailName=getValue($event)">
+              </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-4" *ngFor="let cocktail of cocktails"><app-cocktail cocktailId="{{cocktail.id}}"  name="{{cocktail.name}}" isAlcoholic="{{cocktail.isAlcoholic}}" imageUrl="{{cocktail.imageUrl}}" ingredients="{{cocktail.ingredients}}"></app-cocktail></div>   
+    </div>
+</div>

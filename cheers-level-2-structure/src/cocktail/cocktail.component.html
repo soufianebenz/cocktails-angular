@@ -1,0 +1,11 @@
+<div class="card cocktail-card">
+    <img class="card-horizontal" style="width: 45%" src="{{imageUrl}}" alt="Card image cap">
+    <div class="card-body" style="width: 50%;">
+      <h5 style="margin-left: 0;" >
+        <span [routerLink]="['/cocktails', cocktailId]">{{name}}</span>
+        <span class="icon-star" [class]="favorites?.includes(cocktailId)?'active':''" id="star-{{cocktailId}}" style="margin-left:3rem" (click)="updateFavorites(cocktailId)"></span>
+      </h5>
+      <p class="{{isAlcoholic == 'Alcoholic' ? 'blue' : 'green'}}" style="color:white;border-radius: 5px;text-align: center;">{{isAlcoholic}}</p>
+      <p class="card-text" style="margin-left: 0; font-size: 12px;">{{ingredients}}</p>
+    </div>
+</div>
